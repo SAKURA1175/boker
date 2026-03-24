@@ -1,19 +1,10 @@
 import { motion } from 'motion/react';
 import { Mail, Phone, ArrowUpRight, Github } from 'lucide-react';
-import { Suspense, lazy } from 'react';
-
-const Lanyard = lazy(() => import('./Lanyard'));
 
 export default function Footer() {
   return (
-    <footer id="contact" className="relative py-32 px-6 md:px-16 border-t border-zinc-200 bg-white overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-40">
-        <Suspense fallback={null}>
-          <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} transparent={true} />
-        </Suspense>
-      </div>
-      
-      <div className="max-w-7xl mx-auto relative z-10">
+    <footer id="contact" className="relative py-32 px-6 md:px-16 border-t border-zinc-200 bg-white">
+      <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 mb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -46,8 +37,8 @@ export default function Footer() {
             <div className="flex flex-col space-y-12 text-left lg:text-right">
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-4">电子邮箱 / EMAIL</p>
-                <a href="mailto:songxinpeng07@gmail.com" className="group inline-flex items-center space-x-4 text-2xl md:text-4xl font-display font-black text-zinc-900 border-b-4 border-zinc-900 pb-2 hover:text-zinc-500 hover:border-zinc-500 transition-all">
-                  <span>songxinpeng07@gmail.com</span>
+                <a href="mailto:a1175146250@163.com" className="group inline-flex items-center space-x-4 text-2xl md:text-4xl font-display font-black text-zinc-900 border-b-4 border-zinc-900 pb-2 hover:text-zinc-500 hover:border-zinc-500 transition-all">
+                  <span>a1175146250@163.com</span>
                   <ArrowUpRight className="w-8 h-8 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
                 </a>
               </div>

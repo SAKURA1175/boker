@@ -6,3 +6,20 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# local debug artifacts
+/console-errors.txt
+/final-state-errors.txt
+/contact-*.txt
+/contact-*.png
+/contact-*.md
+/card-texture-*.txt
+/card-texture-*.png
+/github-png-*.txt
+/github-png-*.png
+/lanyard-*.txt
+/lanyard-*.png
+/projects-*.txt
+/projects-*.png
+/real-png-card-*.txt
+/real-png-card-*.png
